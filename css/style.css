@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: rgb(40, 123, 156);
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  max-width: 320px;
+  max-height: 480px;
+  background: rgb(0, 0, 0);
+  padding: 4px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2), -2px -2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.item {
+  background-color: rgb(233, 121, 121);
+  cursor: pointer;
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  max-width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  text-align: right;
+  font-weight: bold;
+}
+
+.input {
+  grid-column: 1/-1;
+  padding: 0;
+}
+
+.item:hover {
+  background: rgb(105, 139, 241);
+}
+
+.clean {
+  grid-column: 1/3;
+  background: rgb(223, 70, 70);
+}
+
+.clean:hover {
+  background: rgb(243, 78, 78);
+}
+
+.back {
+  grid-column: 3/-1;
+  padding: 0;
+  }
+
+.equal {
+  grid-column: 4;
+  grid-row: 6/8;
+  background: rgb(190, 49, 99);
+}
+
+.equal:hover {
+  background: rgb(216, 59, 119);
+}
+
+.zero {
+  grid-column: 1/3;
+}
