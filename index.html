@@ -13,28 +13,28 @@
 				<input type="text" name="textview" readonly>
 			</form>
 		</div>
-		<div class="item clean">C</div>
-		<div class="item back">&larr;</div>
-		<div class="item">+</div>
-		<div class="item">-</div>
-		<div class="item">&times;</div>
-		<div class="item">&divide;</div>
-		<div class="item">7</div>
-		<div class="item">8</div>
-		<div class="item">9</div>
-		<div class="item">(</div>
-		<div class="item">4</div>
-		<div class="item">5</div>
-		<div class="item">6</div>
-		<div class="item">)</div>
-		<div class="item">1</div>
-		<div class="item">2</div>
-		<div class="item">3</div>
-		<div class="item equal">=</div>
-		<div class="item zero">0</div>
-		<div class="item">.</div>
+		<div class="item clean" onclick="clean()">C</div>
+		<div class="item back" onclick="back()">&larr;</div>
+		<div class="item" onclick="insert('+')">+</div>
+		<div class="item" onclick="insert('-')">-</div>
+		<div class="item" onclick="insert('*')">&times;</div>
+		<div class="item" onclick="insert('/')">&divide;</div>
+		<div class="item" onclick="insert('7')">7</div>
+		<div class="item" onclick="insert('8')">8</div>
+		<div class="item" onclick="insert('9')">9</div>
+		<div class="item" onclick="insert('(')">(</div>
+		<div class="item" onclick="insert('4')">4</div>
+		<div class="item" onclick="insert('5')">5</div>
+		<div class="item" onclick="insert('6')">6</div>
+		<div class="item" onclick="insert(')')">)</div>
+		<div class="item" onclick="insert('1')">1</div>
+		<div class="item" onclick="insert('2')">2</div>
+		<div class="item" onclick="insert('3')">3</div>
+		<div class="item equal" onclick="equal()">=</div>
+		<div class="item zero" onclick="insert('0')">0</div>
+		<div class="item" onclick="insert('.')">.</div>
 	</div>
 	
-	<script src="js/calculator.js"></script>
+	<script src="js/index.js"></script>
 </body>
 </html>
